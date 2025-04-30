@@ -28,7 +28,7 @@ var mockusers = `
 `
 
 func (u *UserHandler) InsertMockUsers() error {
-	id1 := uuid.NewString()
+	id1 := "bb054e96-8735-413b-8214-848bf0e67ee2"
 	id2 := uuid.NewString()
 	_, err := u.DB.Exec(mockusers, id1, id2)
 	if err != nil {
